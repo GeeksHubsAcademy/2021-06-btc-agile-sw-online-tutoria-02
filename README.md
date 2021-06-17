@@ -32,4 +32,35 @@ Running tests       npx jest
 Compile struct      npx tsc --build [tsconfig.json] -> define files [ ... ]
 
 CI/CD | nodejs		.travis.yml 
+
+Actualizar Fork     Git
+                    git remote add upstream https://github.com/GeeksHubsAcademy/2021-06-btc-agile-sw-online-tutoria-02.git
+                    git fetch upstream
+                    git checkout feature
+                    git rebase upstream/feature
+                    git push -f origin feature
+                    
+                    GitHub
+                    Pulsamos sobre el botón "Compare" en el repo Forkeado
+                    Pulsamos sobre "switching the base"
+                    Generamos PR
+                    Aceptamos PR
+```
+
+Propósito
+```
+Se necesita instalar un sistema de pruebas en la nube para poder aceptar las PR's con feedback por adelantado
+Es necesario basarse en el ejemplo de la kata1 de la primera tutoría
+Los pasos a seguir son:
+ - Fork del proyecto
+ - Crear rama 'feature'
+ - Añadir la Kata1 a la solución del proyecto actual
+ - Validar en local 
+ - Generar una PR a la rama master del Fork
+ - Generar una PR a la rama master del repo actual
+ - Añadir fichero 'SAAS' en el repo actual
+ - Actualizar Fork
+ - Generar una PR a la rama master del Fork
+ - Generar una PR a la rama master del repo actual
+ - Validar lanzamiento de Test en PR actual
 ```
