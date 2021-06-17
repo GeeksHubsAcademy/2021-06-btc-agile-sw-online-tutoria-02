@@ -47,4 +47,8 @@ describe('Testing', function (){
         expect(result).toBe(expected); 
     });
 
+    test('Testeo failed',function() {
+        expect(false).toBe(true); 
+    });
+
 });
