@@ -46,8 +46,4 @@ describe('Testing', function (){
         //Assert
         expect(result).toBe(expected);
     });
-
-    test('Test fail',function() {
-       expect(true).toBe(false);
-    });
 });
